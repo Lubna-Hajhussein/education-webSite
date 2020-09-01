@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regExp</title>
+    <link rel="icon" href="https://lofrev.net/wp-content/photos/2017/05/roar_r_logo_1.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="pattBody">
+    <div class="topnav" >
+        <img id="logo" width="120px" hight="120px" src="https://i.pinimg.com/originals/78/41/a1/7841a10f3cfb4e7daa7d56237fe53f48.png"
+  onclick="location.assign(`./index.html`)" />
+      </div>
+     
+      <div id="fixed">
+       
+        <br />
+            <form  id="patternOne" class="form-style-7">
+                <img id="restartOne" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+                <input class="submitBut" value="simple pattern" type="submit" id="simplePatt" style="display: block;   margin: 0 auto; width: 200px;">
+  
+                <p><span style="color: blue;">const</span> <spaan style="color: #6495ED; " >pattern</spaan>  = 
+                    <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("
+              <input style="width: 310px;" id="charOne" />"
+               ,
+               
+              <select id="selOne" class="dropdown"> 
+                  <option value="">flag</option>
+                  <option >g</option>
+                  <option>gi</option>
+               </select> )
+               <br />
+               <br />
+               <span id="pattOne" style="position: absolute; left: 50%; right: 50%;"></span>
+          
+            </p>
+        </form>
+          
+      </div>
+      <div>
+        <form  id="patternTwo" class="form-style-7">
+            <img id="restartTwo" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+            <input class="submitBut" value="Character Set" type="submit" id="CharacterSet" style="display: block;   margin: 0 auto; width: 200px;">
+            <p>
+                <span style="color: blue;">const</span> <span style="color: #6495ED;">pattern</span> =
+                <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[ 
+           <input  style="	width: 305px;" id="charTwo" type="text" >]",
+           <select id="selTwo"class="dropdown"> 
+            <option value="">flag</option>
+            <option>g</option>
+            <option>gi</option>
+         </select>
+           )
+           <br />
+           <br />
+           <span id="pattTwo" style="position: absolute; left: 50%; right: 50%;"></span>
+        </p>
+            </form>
+      </div>
+      <div>
+          <form id="patternThree" class="form-style-7">
+          <img id="restartThree" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+          <input class="submitBut" value="Exclude Set" type="submit" id="ExcludeSet" style="display: block;   margin: 0 auto; width: 200px;">
+          <br />
+          <p>
+            <span style="color: blue;">const</span> <span style="color: #6495ED;">pattern</span> =
+            <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[
+            <select size="0px" class="dropdown" style="width: 83px;"> 
+                <option value="">Except</option>
+                <option>^</option>
+            </select>
+            
+            <input style="	width: 216px;" id="charThree" type="text" >]",
+            <select id="selThree" class="dropdown"> 
+                <option value="">flag</option>
+             <option>g</option>
+             <option>gi</option>
+          </select> )
+          <br/>
+          <br/>
+          <span id="pattThree" style="position: absolute; left: 50%; right: 50%;"></span>
+        </p>
+        </form>
+      </div>
+      <div>
+        <form  id="patternFour" class="form-style-7">
+            <img id="restartFour" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+            <input class="submitBut" value="Range" type="submit" id="range" style="display: block;   margin: 0 auto; width: 200px;">
+        <br/>
+        <p>
+            <span style="color: blue;">const</span> <spaan style="color: #6495ED;">pattern</spaan>  = 
+            <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[
+         <input style="	width: 124px;" type="text"  id="charFour1" > 
+         <select class="dropdown" style="width: 40px;"> 
+            <option value="">to</option>
+            <option value="-">-</option>
+         </select>
+         <input style="	width: 124px;" type="text"  id="charFour2">]" ,
+         <select id="selFour" class="dropdown"> 
+            <option value="">flag</option>
+            <option>g</option>
+            <option>gi</option>
+         </select> )
+         <br/>
+         <br/>
+         <span id="pattFour" style="position: absolute; left: 50%; right: 50%; width: 800px;"></span>
+        </p>
+        </form>
+      </div>
+      <div>
+          <form id="patternFive" class="form-style-7">
+            <img id="restartFive" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+            <input class="submitBut" value="repeated"  type="submit" id="repeatedChars" style="display: block;   margin: 0 auto; width: 200px;">
+            <br/>
+            <p>
+                <span style="color: blue;">const</span> <spaan style="color: #6495ED;">pattern</spaan>  = 
+                <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[
+             <input style="	width: 101px;" type="text"  id="charFive1" > 
+             <select class="dropdown" style="width: 40px;"> 
+                <option value="">to</option>
+                <option value="-">-</option>
+             </select>
+             <input style="	width: 101px;" type="text"  id="charFive2">]{
+                 <input id="charFive3" type="number" style="	width: 34px;"  min="1" max="9" step="1" value="1">
+             }" ,
+             <select id="selFive" class="dropdown"> 
+                <option value="">flag</option>
+                <option>g</option>
+                <option>gi</option>
+             </select> )
+             <br/>
+             <br/>
+             <span id="pattFive" style="position: absolute; left: 50%; right: 50%; width: 800px;"></span>
+            </p>
+        </form>
+      </div>
+       <div>
+           <form id="patternSex" class="form-style-7" >
+            <img id="restartSex" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+            <input class="submitBut" value="repeated at least"  type="submit" id="repeatedChars" style="display: block;   margin: 0 auto; width: 200px;">
+            <p>
+                <span style="color: blue;">const</span> <span style="color: #6495ED;">pattern</span>  = 
+                <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[
+             <input style="	width: 53px;" type="text"  id="charSex1" > 
+             <select class="dropdown" style="width: 40px;"> 
+                <option value="">to</option>
+                <option value="-">-</option>
+         </select> 
+             <input style="	width: 53px;" type="text"  id="charSex2">]{
+                 <input id="charSex3" type="number" style="	width: 34px;"  min="1" max="9" step="1" value="1">
+                 <select id="explainSex" class="dropdown" style="width: 83px;"> 
+                    <option value="">At Least</option>
+                     <option value=",">,</option>
+                 </select>
+             }" ,
+             <select id="selSex" class="dropdown"> 
+                <option value="">flag</option>
+                <option>g</option>
+                <option>gi</option>
+             </select> )
+             <br/>
+             <br/>
+             <span id="pattSex" style="position: absolute; left: 50%; right: 50%; width: 800px;"></span>
+            </p>
+           </form>
+       </div>
+       <div>
+           <form id="patternSeven" class="form-style-7">
+            <img id="restartSeven" src="https://image.freepik.com/free-icon/restart_318-1763.jpg" width="50px" height="50px" style="position: absolute; left: 65%; right: 40%; cursor: pointer; "/>
+            <input class="submitBut" value="repeated between"  type="submit" style="display: block;   margin: 0 auto; width: 200px;">
+            <br/>
+            <p>
+                <span style="color: blue;">const</span> <span style="color: #6495ED;">pattern</span>  = 
+                <span style="color: blue;">new</span> <span style="color: #4B0082;">RegEx</span>("[
+             <input style="	width: 35px;" type="text"  id="charSeven1" > 
+            
+                <select class="dropdown" style="width: 40px;"> 
+                    <option value="">to</option>
+                    <option value="-">-</option>
+             </select>
+             
+             <input style="	width: 35px;" type="text"  id="charSeven2">]{
+                 <input id="charSeven3" type="number" style="	width: 34px;"  min="1" max="9" step="1" value="1">
+                 <select id="explainSeven" class="dropdown" style="width: 83px;"> 
+                    <option value="">Between</option>
+                     <option value=",">,</option>
+                 </select>
+               
+                    <input id="charSeven4" type="number" style="width: 34px;"  min="1" max="9" step="1" value="1">
+           
+                 
+             }" ,
+             <select id="selSeven" class="dropdown"> 
+                <option value="">flag</option>
+                <option>g</option>
+                <option>gi</option>
+             </select> )
+             <br/>
+             <br/>
+             <span id="pattSeven" style="position: absolute; left: 50%; right: 50%; width: 800px;"></span>
+            </p>
+           </form>
+       </div>
+       <script src="data.js"></script>
+      <script src="pattern.js"></script>
+</body>
+</html>
