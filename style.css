@@ -113,7 +113,7 @@ b {
 
   font-size: 17px;
   font-family: "Open Sans Condensed", arial, sans;
-  width: 650px;
+  width: 660px;
   padding: 10px;
   background: #ffffff;
   margin: 30px auto;
@@ -180,6 +180,7 @@ b {
 input {
   border: none;
   border-bottom: dotted 7px gray;
+  
 }
 
 input:checked {
@@ -193,7 +194,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 #pattBody {
-  background-image: url("https://image.shutterstock.com/image-illustration/regular-expressions-world-word-regex-600w-399755788.jpg");
+  background-image: url("https://image.shutterstock.com/image-illustration/regular-expressions-world-word-regex-260nw-399755788.jpg");
   background-repeat: no-repeat;
   background-size:1360px  1750px;
 }
@@ -201,5 +202,64 @@ input[type="number"]::-webkit-inner-spin-button {
 #homeBody{
 	background-image: url("https://lampstudy.net/wp-content/uploads/2020/04/Is-Computer-science-hard.jpg");
 	background-repeat: no-repeat;
-	background-size:1360px  875px;
+	background-size:1390px  875px;
+}
+
+table {
+  margin: 19px;
+}
+
+th{
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: black;
+  font-size: 21px;
+  color: white;
+}
+
+td{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 24px;
+  color: white;
+  width: 1040px;
+}
+/* //https://i.pinimg.com/originals/02/6e/89/026e89261842abe53024be677e4ae0b7.jpg */
+#metaBody{
+  background-image: url("https://c8.alamy.com/comp/W3XEMB/regular-expression-with-binary-code-digital-technology-background-abstract-background-with-program-code-and-regular-expression-programming-and-codin-W3XEMB.jpg");
+  background-repeat: no-repeat;
+  background-size:1390px  749px;
+}
+
+.adavnced{
+  width: 90px;
+  border-radius: 10px;
+  border: 3px outset rgb(59, 55, 55);
+
+  color: white;
+  background-color: #6495ed;
+}
+
+#advancedBody{
+  background-image: url("https://image.shutterstock.com/image-illustration/regular-expressions-world-word-regex-260nw-399755788.jpg");
+  background-repeat: no-repeat;
+  background-size:1360px  1190px;
+}
+
+.testingBut{
+  -moz-box-shadow: inset 0px 1px 0px 0px black;
+  -webkit-box-shadow: inset 0px 1px 0px 0px black;
+  box-shadow: inset 0px 1px 0px 0px black;
+  background-color: black;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 40px;
+
 }

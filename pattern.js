@@ -1,3 +1,25 @@
+const namesObj = JSON.parse(localStorage.getItem("pattern"))
+
+patternsArr = patternsArr.filter((pattern)=>{
+if(namesObj[pattern.name]==="Yes"||pattern.name==="defaultPattern"){
+  return pattern
+}
+else{
+  pattern.patternEl.hidden = true
+}
+}
+)
+if(patternsArr.length===4){
+  document.querySelector("body").style = "background-size:1390px  950px;"
+}
+if(patternsArr.length<=3){
+  document.querySelector("body").style = "background-size:1390px  750px;"
+}
+if(patternsArr.length<=2){
+  patternsArr[0].patternEl.style = "position: absolute;top: 30%; left:23%; right:50%;"
+  patternsArr[1].patternEl.style = "position: absolute;top: 60%; left:23%; right:50%;"
+}
+
 
 patternsArr.forEach((pattern, index) => {
   let InputOne = pattern.Input1;

@@ -1,5 +1,6 @@
 let patternsArr = [
     {
+      name:"defaultPattern",
       patternEl: document.querySelector("#patternOne"),
       outputPatt: document.querySelector("#pattOne"),
       Input1: document.querySelector("#charOne"),
@@ -12,6 +13,7 @@ let patternsArr = [
     },
   
     { 
+      name:"CharacterSets",
       patternEl: document.querySelector("#patternTwo"),
       outputPatt: document.querySelector("#pattTwo"),
       Input1: document.querySelector("#charTwo"),
@@ -24,6 +26,7 @@ let patternsArr = [
     },
   
     {
+      name:"ExcludeSets",
       patternEl: document.querySelector("#patternThree"),
       outputPatt: document.querySelector("#pattThree"),
       Input1: document.querySelector("#charThree"),
@@ -36,6 +39,7 @@ let patternsArr = [
     },
   
     {
+      name:"Range",
       patternEl: document.querySelector("#patternFour"),
       outputPatt: document.querySelector("#pattFour"),
       Input1: document.querySelector("#charFour1"),
@@ -47,6 +51,7 @@ let patternsArr = [
       restartImg: document.querySelector("#restartFour"),
     },
     {
+      name:"RepeatingCharacters",
       patternEl: document.querySelector("#patternFive"),
       outputPatt: document.querySelector("#pattFive"),
       Input1: document.querySelector("#charFive1"),
@@ -60,6 +65,7 @@ let patternsArr = [
       restartImg: document.querySelector("#restartFive"),
     },
     {
+      name:"RepeatingCharacters",
       patternEl: document.querySelector("#patternSex"),
       outputPatt: document.querySelector("#pattSex"),
       Input1: document.querySelector("#charSex1"),
@@ -73,6 +79,7 @@ let patternsArr = [
       restartImg: document.querySelector("#restartSex"),
     },
     {
+      name:"RepeatingCharacters",
       patternEl: document.querySelector("#patternSeven"),
       outputPatt: document.querySelector("#pattSeven"),
       Input1: document.querySelector("#charSeven1"),

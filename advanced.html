@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regExp</title>
+    <link rel="icon" href="https://lofrev.net/wp-content/photos/2017/05/roar_r_logo_1.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="advancedBody">
+    <div class="topnav" >
+        <img id="logo" width="120px" hight="120px" src="https://i.pinimg.com/originals/78/41/a1/7841a10f3cfb4e7daa7d56237fe53f48.png"
+  onclick="location.assign(`./index.html`)" />
+        <a href="./metaCharacters.html">Meta && Special-Characters</a>
+        <a href="./advanced.html">Advanced</a>
+      </div>
+     <div  class="form-style-7">
+      <p >prevent the user from typing before & after your pattern 
+         
+      </p> 
+      <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+      <div style="position: absolute; top: 27%; left: 30%; ">
+      <select class="adavnced">
+          <option>start with</option>
+          <option>^</option>
+      </select>
+      your pattern
+      <select class="adavnced" style="width: 90px;">
+        <option>end with</option>
+        <option>$</option>
+    </select>
+</div>
+    </div>
+    <div class="form-style-7">
+        <p  > or in regular expression with words and Not Characters</p>
+        <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+        <div style="position: absolute; top: 51%; left: 30%; ">
+            
+        word
+        <select class="adavnced">
+            <option>or</option>
+            <option>|</option>
+        </select>
+        another-word
+        <img style="padding-right: 30px;"  src="https://svgsilh.com/svg_v2/157822.svg" width="20px" height="20px">
+        [(word)(another-word)]
+        <img src="https://2.bp.blogspot.com/-bCJlvEwJyHw/Vch4UblT55I/AAAAAAAASXM/icHtxnn0XYI/s1600/RTAyEj7bc.png" width="20px" height="20px">
+    </div>
+        
+    </div>
+    <div class="form-style-7">
+        <p>to escape the 
+            <select class="adavnced" style="width: 150px;">
+                <option>special characters</option>
+                <option>?</option>
+                <option>.</option>
+                <option>*</option>
+                <option>+</option>
+            </select>
+             from the special behavior</p>
+        <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+        <div style="position: absolute; top: 75%; left: 30%; ">
+              use 
+              <select class="adavnced">
+                <option>escape</option>
+                <option>\</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="form-style-7">
+        <p>to make a phone number pattern</p>
+        <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+        <div style="position: absolute; top: 99%; left: 30%; ">
+            /
+            <select class="adavnced">
+                <option>start with</option>
+                <option>^</option>
+            </select>
+            07[<select class="adavnced" style="width: 150px;">
+                <option>character set</option>
+                <option>789</option>
+            </select>
+            ][0-9]{
+                <select class="adavnced" >
+                    <option>repeat</option>
+                    <option>7</option>
+                </select>
+                }
+                <select class="adavnced" style="width: 90px;">
+                    <option>end with</option>
+                    <option>$</option>
+                </select>
+                /
+        </div>
+    </div>
+    <div class="form-style-7">
+      <p>to make an email pattern</p>
+      <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+      <div style="position: absolute; top: 122%; left: 30%; ">
+          /^
+          [a-z]{4,12}@((g
+          <select class="adavnced" style="width: 50px;">
+            <option>or</option>
+            <option>|</option>
+        </select>
+          hot)mail
+          <select class="adavnced" style="width: 50px;">
+            <option>or</option>
+            <option>|</option>
+        </select>
+          yahoo)
+          <select class="adavnced" style="width: 90px;">
+            <option>escape</option>
+            <option>\</option>
+        </select>
+          .com
+          $
+          /
+      </div>
+    </div>
+    <div class="form-style-7">
+        <p>to test your pattern</p>
+        <img src="https://i7.uihere.com/icons/143/383/767/arow-right-88b19bef206e6a0aa7f4db17b20e5d73.png"  width="40px" height="40px">
+        <img style="padding-right: 30px;" hidden id="true" src="https://svgsilh.com/svg_v2/157822.svg" width="20px" height="20px">
+        <img style="padding-right: 30px;" hidden id="false" src="https://2.bp.blogspot.com/-bCJlvEwJyHw/Vch4UblT55I/AAAAAAAASXM/icHtxnn0XYI/s1600/RTAyEj7bc.png" width="20px" height="20px">
+        <div style="position: absolute; top: 146%; left: 30%; ">
+          <input type="text" id="RegExp" placeholder="RegExp" style="width: 90px;">
+          <input type="button" class="testingBut" value=".">
+          <input type="button" id="check" class="testingBut" value="test">
+          <input type="button"  class="testingBut" value="(">
+          
+            <input type="text" id="String" placeholder="String" style="width: 90px;">
+            <input type="button" class="testingBut" value=")" >
+        </div>
+    </div>
+    <script>
+        document.querySelector("#check").addEventListener('click',()=>{
+          
+              const regExpre = document.querySelector("#RegExp")
+              const stringToMatch = document.querySelector("#String")
+              regExpre.placeholder = "RegExp"
+              regExpre.style = "border-bottom-color:gray ; width: 90px;"
+              if(regExpre.value[0]!=='/'||regExpre.value[regExpre.value.length-1]!=='/'){
+                  document.querySelector("#false").hidden=true
+                  document.querySelector("#true").hidden=true
+                  regExpre.placeholder = "invalid regExp"
+                  regExpre.value = ""
+                  regExpre.style = "border-bottom-color:red ; width: 90px;"
+                  throw Error("invalid regExp")
+                  return;
+              }
+              const isMatch = (new RegExp(regExpre.value.slice(1,regExpre.value.length-1)).test(stringToMatch.value))
+              if(isMatch){
+                  document.querySelector("#false").hidden=true
+                  document.querySelector("#true").hidden=false
+              }
+              if(!isMatch){
+                  document.querySelector("#true").hidden=true
+                  document.querySelector("#false").hidden=false
+              }
+        })
+    </script>
+</body>
+</html>
